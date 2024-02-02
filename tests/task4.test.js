@@ -1,5 +1,15 @@
-
 const getUserData = require("../task4.js");
+
+const { JSDOM } = require('jsdom');
+const fs = require('fs');
+const path = require('path');
+require('@testing-library/jest-dom');
+
+
+const html = fs.readFileSync(path.resolve(__dirname, '../index.html'), 'utf-8');
+
+const { window } = new JSDOM(html);
+global.document = window.document;
 
 test("Отримання даних користувача", () => {
   const { name, phoneNumber, dataOfBirth, emailAddress } = getUserData();

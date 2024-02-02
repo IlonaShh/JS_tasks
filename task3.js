@@ -33,4 +33,4 @@ function applyStyles() {
 }
 
 
-//module.exports = applyStyles;
+module.exports = applyStyles;

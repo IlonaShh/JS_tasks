@@ -20,4 +20,4 @@
     span[0].style.display = 'none';
 }
 
-// module.exports = applyStyles;
+ module.exports = applyStyles;

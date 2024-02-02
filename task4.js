@@ -21,4 +21,4 @@ function getUserData() {
 }
 
 
-//module.exports = getUserData;
+module.exports = getUserData;
